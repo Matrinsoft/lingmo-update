@@ -1,23 +1,22 @@
-Source: lingmo-updator
-Section: devel
+﻿Source: lingmo-update
+Section: utils
 Priority: optional
 Maintainer: Lingmo OS Team <team@lingmo.org>
-Build-Depends:  cmake,
-		libqapt-dev,
-		qtbase5-dev,
-		libqapt3-runtime,
-		qtdeclarative5-dev,
-		qml-module-qtwebview,
-		qtwebengine5-dev,
-		qtquickcontrols2-5-dev,
-		qttools5-dev,
-		qttools5-dev-tools,
-		debhelper (>= 9)
-Standards-Version: 4.5.0
-Homepage: https://lingmo.org
+Build-Depends:
+    cmake (>= 3.20),
+    debhelper-compat (= 13),
+    pkg-config,
+    qt6-base-dev (>= 6.5),
+    qt6-declarative-dev,
+    qt6-base-dev, qt6-declarative-dev, libqapt-dev,
+Standards-Version: 4.6.2
+Homepage: https://github.com/lingmo-os/lingmo-update
 Rules-Requires-Root: no
 
-Package: lingmo-updator
+Package: lingmo-update
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: Lingmo OS Updator.
+Depends:
+    ,
+    ,
+Description: Lingmo Update Tool
+ Lingmo Desktop Lingmo Update Tool.
